@@ -1,32 +1,12 @@
 // app/layout.tsx
 import "./globals.css";
-import localFont from "next/font/local";
+import { Figtree } from "next/font/google";
 
 // adds font
-const emberFont = localFont({
-  src: [
-    {
-      path: "./fonts/SoleilRegular.otf",
-      weight: "400",
-      style: "normal",
-    },
-    {
-      path: "./fonts/SoleilBook.otf",
-      weight: "500",
-      style: "normal", // changed
-    },
-    {
-      path: "./fonts/SoleilBold.otf",
-      weight: "700",
-      style: "normal", // changed
-    },
-    {
-      path: "./fonts/SoleilLight.otf",
-      weight: "300", // You can change weight to 300 to reflect "Light"
-      style: "normal", // changed
-    },
-  ],
-  variable: "--font-emberFont", // used in Tailwind via CSS variable
+const figtree = Figtree({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "700"], // Add desired weights
+  variable: "--font-figtree",
   display: "swap",
 });
 
@@ -41,8 +21,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={emberFont.variable}>
-      <body>{children}</body>
+    <html lang="en">
+      <body className={figtree.variable}>{children}</body>
     </html>
   );
 }

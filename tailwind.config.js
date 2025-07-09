@@ -7,7 +7,7 @@ module.exports = {
     theme: {
       extend: {
         fontFamily: {
-          emberFont: ["var(--font-emberFont)", "sans-serif"],
+          figtree: ["var(--font-figtree)", "sans-serif"],
         },
       },
     },
