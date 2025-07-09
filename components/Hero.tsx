@@ -1,8 +1,8 @@
 export default function Hero() {
   return (
     <section className="flex flex-col items-center justify-center text-center py-20 px-6 bg-gradient-to-br from-black to-gray-900 text-white">
-      <h1 className="text-5xl font-bold mb-4">
-        Empowering Ideas, Crafted by Ember
+      <h1 className="font-ember font-light text-5xl mb-4">
+        Empowering Ideas, Crafted by ember.
       </h1>
       <p className="text-xl max-w-xl mb-6">
         A digital agency building bold software and beautiful brands.
