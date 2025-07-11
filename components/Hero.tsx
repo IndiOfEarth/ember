@@ -1,10 +1,6 @@
 export default function Hero() {
   return (
     <section className="flex flex-col items-center justify-center text-center py-20 px-6 bg-gradient-to-br from-black to-gray-900 text-white">
-      {/* <h1 className="font-figtree font-semibold text-5xl mb-4">
-        <span className="font-figtree font-light">Empowering Ideas</span>,
-        Crafted by ember.
-      </h1> */}
       <h1 className="font-figtree font-extrabold text-8xl mb-4">
         <span className="font-figtree font-extralight text-5xl">
           Empowering ideas, powered by

@@ -2,6 +2,7 @@
 import Hero from "@/components/Hero";
 import AboutSection from "@/components/AboutSection";
 import ServicesSection from "@/components/ServicesSection";
+import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <AboutSection />
       <ServicesSection />
+      <ContactForm />
       <Footer />
     </main>
   );
